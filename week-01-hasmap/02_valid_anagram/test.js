@@ -1,38 +1,3 @@
-/**
- * @param {string} s
- * @param {string} t
- * @return {boolean}
- */
-// const isAnagram = function(s, t) {
-//     // 1. Edge case: Độ dài khác nhau thì không thể là anagram
-//     if (s.length !== t.length) {
-//         return false;
-//     }
-
-//     const countMap = new Map();
-
-//     // 2. Bước Nạp (+1) từ chuỗi s
-//     for (let i = 0; i < s.length; i++) {
-//         const char = s[i];
-//         countMap.set(char, (countMap.get(char) || 0) + 1);
-//     }
-
-//     // 3. Bước Trừ (-1) từ chuỗi t
-//     for (let i = 0; i < t.length; i++) {
-//         const char = t[i];
-
-//         // Ký tự không tồn tại trong map hoặc số lượng đã bị trừ hết (về 0)
-//         if (!countMap.has(char) || countMap.get(char) === 0) {
-//             return false;
-//         }
-
-//         countMap.set(char, countMap.get(char) - 1);
-//     }
-
-//     // 4. Nếu trừ hết mà không phát sinh lỗi thì 2 chuỗi bằng nhau
-//     return true;
-// };
-
 const isAnagram = function(s, t) {
     console.log(`=== BẮT ĐẦU KIỂM TRA: s = "${s}", t = "${t}" ===`);
 
